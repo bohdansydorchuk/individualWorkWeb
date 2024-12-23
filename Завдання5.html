@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <style>
+        /* Стилізація форми */
+        form {
+            width: 300px;
+            margin: 50px auto; /* Центрування форми */
+            padding: 20px;
+            border: 2px solid #333; /* Чорна рамка */
+            border-radius: 10px; /* Закруглені кути */
+            background-color: #f9f9f9; /* Світло-сірий фон */
+            font-family: Arial, sans-serif;
+        }
+
+        label {
+            display: block; /* Відображення кожного підпису у новому рядку */
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%; /* Ширина 100% від контейнера */
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc; /* Сіра рамка */
+            border-radius: 5px;
+            box-sizing: border-box; /* Включення рамки та відступів у ширину */
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: blue; /* Синій фон */
+            color: white; /* Білий текст */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green; /* Зелений фон при наведенні */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Форма реєстрації</h1>
+    <form action="#" method="post">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" placeholder="Введіть своє ім'я" required>
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" placeholder="aaa@aaa.com" required>
+
+        <label>Стать:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male" style="display: inline;">Чоловік</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female" style="display: inline;">Жінка</label>
+
+        <br><br>
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>

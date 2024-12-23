@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиця з даними</title>
+    <style>
+        /* Стилізація таблиці */
+        table {
+            width: 50%;
+            margin: 20px auto; /* Центрування таблиці */
+            border-collapse: collapse; /* Злиття меж клітинок */
+        }
+
+        th, td {
+            border: 1px solid #333; /* Чорна рамка */
+            padding: 10px;
+            text-align: center; /* Текст по центру */
+        }
+
+        th {
+            background-color: #f4f4f4; /* Світло-сірий фон для заголовків */
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Світлий фон для парних рядків */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Таблиця з даними</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Ім'я</th>
+                <th>Вік</th>
+                <th>Місто</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Олександр</td>
+                <td>21</td>
+                <td>Київ</td>
+            </tr>
+            <tr>
+                <td>Марія</td>
+                <td>19</td>
+                <td>Харків</td>
+            </tr>
+            <tr>
+                <td>Анна</td>
+                <td>23</td>
+                <td>Львів</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

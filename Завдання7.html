@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стилізація списків</title>
+    <style>
+        /* Стилізація списку */
+        ul {
+            background-color: #f5f5dc; /* Бежевий фон */
+            padding: 20px; /* Внутрішні відступи */
+            border-radius: 8px; /* Закруглені кути */
+            list-style-position: inside; /* Маркери всередині списку */
+        }
+
+        ul li {
+            color: green; /* Колір маркерів списку */
+            margin-bottom: 10px; /* Відстань між пунктами списку */
+        }
+
+        ul li::marker {
+            color: green; /* Колір маркерів */
+        }
+    </style>
+</head>
+<body>
+    <h1>Стилізований список</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+</body>
+</html>

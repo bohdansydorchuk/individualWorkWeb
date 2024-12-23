@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фіксоване меню</title>
+    <style>
+        /* Скидання стилів за замовчуванням */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Стилі для фіксованого меню */
+        nav {
+            position: fixed; /* Фіксоване положення зверху */
+            top: 0;
+            left: 0;
+            width: 100%; /* Ширина на всю сторінку */
+            background-color: #333; /* Темний фон */
+            color: white; /* Білий текст */
+            padding: 10px 0; /* Внутрішній відступ зверху та знизу */
+            z-index: 1000; /* Забезпечує, що меню буде поверх інших елементів */
+        }
+
+        /* Стилі для списку у навігації */
+        nav ul {
+            display: flex; /* Горизонтальне вирівнювання */
+            justify-content: center; /* Центрування по горизонталі */
+            list-style: none; /* Відключення маркерів списку */
+        }
+
+        nav ul li {
+            margin: 0 20px; /* Відступи між пунктами меню */
+        }
+
+        nav ul li a {
+            color: white; /* Білий колір тексту */
+            text-decoration: none; /* Видалення підкреслення */
+            font-size: 18px; /* Розмір шрифту */
+            font-weight: bold;
+            transition: color 0.3s; /* Плавна зміна кольору */
+        }
+
+        nav ul li a:hover {
+            color: #ff9800; /* Колір тексту при наведенні */
+        }
+
+        /* Стилі для основного контенту */
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 60px; /* Відступ для основного контенту, щоб не перекривався меню */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        p {
+            margin-bottom: 20px; /* Відступи між абзацами */
+        }
+    </style>
+</head>
+<body>
+    <!-- Фіксоване навігаційне меню -->
+    <nav>
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Послуги</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <!-- Основний контент сторінки -->
+    <main>
+        <h1>Ласкаво просимо!</h1>
+        <p> Меню залишається видимим під час прокручування сторінки.</p>
+
+       <p style="height: 1000px;">Прокрутіть ще вниз, щоб перевірити фіксацію меню.</p>
+    </main>
+</body>
+</html>
